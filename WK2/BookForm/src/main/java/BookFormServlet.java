@@ -7,23 +7,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(description = "Forms wth Servlet", urlPatterns = { "/HelloFormsServlet" })
-public class HelloFormsServlet extends HttpServlet {
+@WebServlet(description = "Book Form", urlPatterns = { "/BookFormServlet" })
+public class BookFormServlet extends HttpServlet {
+    /**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
-       
-    public HelloFormsServlet() {
+
+	public BookFormServlet() {
         super();
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		response.setContentType("text/html");
 		PrintWriter p = response.getWriter();
 		
 		// Get the parameter from the form 
-		String name = request.getParameter("name");
-		String city = request.getParameter("city");
-		p.println("<h2>Hello " + name + " from " + city + ".</h2>");
+		String book = request.getParameter("book");
+		String author = request.getParameter("author");
+		p.println("<p>Book " + book + " written by " + author + ".</p>");
 		p.close();
 	}
-
 }
