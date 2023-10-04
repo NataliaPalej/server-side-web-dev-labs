@@ -3,10 +3,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>User Details</title>
+<title>Book Details</title>
 </head>
 <body>
-    Name: <c:out value="${user.name}"/> <br>
-    Address: <c:out value="${user.address}"/> <br>
+    Book Title: <c:out value="${book.title}"/> <br>
+    Book Author: <c:out value="${book.author}"/> <br>
 </body>
 </html>
