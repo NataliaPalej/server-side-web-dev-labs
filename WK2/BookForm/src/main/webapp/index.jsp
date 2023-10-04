@@ -7,10 +7,8 @@
 	<h1>Lab2 Q3</h1>
 	<p>Create a J2EE application containing form to create a book (title/author)</p>
 	<p>A servlet should return message "Book -title- written by -author-".</p>
-	<br>
 	
 	<form method = "post" action="BookForm">
-		<br>
 		Enter book name: <input type="text" name="book">
 		<br>
 		<br>
