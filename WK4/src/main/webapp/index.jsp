@@ -30,7 +30,6 @@
 	<input type="submit" value="Submit" class="w3-container w3-center w3-padding-large w3-hover-pink w3-right">
 	
 	</form>
-	</div>
 </div>
 
 </body>
