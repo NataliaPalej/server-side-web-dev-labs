@@ -8,20 +8,20 @@
 <title>Display List Database</title>
 </head>
 
-<body>
+<body background="minion-pink.jpg">
 <h1 class="w3-center w3-black">Display Database List</h1>
 	<!-- listOfUsers must match the name from UserController -->
 	
 	
-		<table class="w3-border">
+		<table class="w3-border w3-padding w3-margin w3-white" style="opacity: 0.8;">
 			<tr class="w3-border">
-				<th>Name</th>
-				<th>Address</th>
+				<th class="w3-border">Name</th>
+				<th class="w3-border">Address</th>
 			</tr>
 			<c:forEach items="${listOfUsers}" var="user">
 			<tr >
-				<td ><c:out value="${user.name}"/></td>
-				<td><c:out value="${user.address}"/></td>	
+				<td class="w3-border" style="width: 150px"><c:out value="${user.name}"/></td>
+				<td class="w3-border" style="width: 150px"><c:out value="${user.address}"/></td>	
 			</tr>
 			</c:forEach>
 		</table>
