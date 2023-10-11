@@ -34,15 +34,18 @@ public enum BookDAO {
 	/** 
 	 * Method that will save new book in our "database"
 	 * It has to be added manually in BookController Servlet class
+	 * Method checks if book already exists in list
 	 */
 	
 	public void saveBook(Book b) {
-		for (Book i : bookList) {
-			if (i.equals(b)) {
+		boolean bookExists = false;
+		for (Book book : bookList) {
+			if (book.getTitle().equals(b.getTitle())) {
+				bookExists = true;
 			}
-			else {
+		}
+		if (!bookExists){
 				bookList.add(b);
-			}
 		}
 	}
 }
