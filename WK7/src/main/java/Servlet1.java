@@ -27,8 +27,7 @@ public class Servlet1 extends HttpServlet {
 		
 		
 		// Get user parameters
-		User u1 = new User(request.getParameter("name"), request.getParameter("address"), request.getParameter("addressLine1"),
-				request.getParameter("addressLine2"), request.getParameter("card"), request.getParameter("ccv"), request.getParameter("expiry"));
+		User u1 = new User(request.getParameter("name"), request.getParameter("address"), request.getParameter("addressLine1"), request.getParameter("addressLine2"), request.getParameter("card"), request.getParameter("ccv"), request.getParameter("expiry"));
 		// Pass the actual user s.setAttribute("user", u1);
 		// In index file:
 		// <c:out value="${sessionScope.user.name}"/>
